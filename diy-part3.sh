@@ -10,4 +10,4 @@
 # Description: OpenWrt DIY script part 3 (Before Update feeds)
 #
  
-mv MI-R4A/banner openwrt/package/base-files/files/etc/banner
+mv banner openwrt/package/base-files/files/etc/banner
