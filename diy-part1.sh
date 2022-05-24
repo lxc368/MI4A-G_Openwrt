@@ -14,8 +14,8 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 ### 修改为R4A千兆版Breed直刷版
 ## mt7621_xiaomi_mir3g-v2.dts 好像被改成了 mt7621_xiaomi_mi-router-4a-3g-v2.dtsi  测试一下
