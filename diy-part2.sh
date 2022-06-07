@@ -37,6 +37,12 @@ echo "" >> package/lean/default-settings/files/zzz-default-settings
 echo "" >> package/lean/default-settings/files/zzz-default-settings
 echo "exit 0" >> package/lean/default-settings/files/zzz-default-settings
 
+#删除原默认主题
+rm -rf package/lean/luci-theme-argon
+rm -rf package/lean/luci-theme-bootstrap
+rm -rf package/lean/luci-theme-material
+rm -rf package/lean/luci-theme-netgear
+rm -rf package/kenzo/luci-theme-ifit
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
