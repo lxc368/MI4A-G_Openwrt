@@ -1,3 +1,3 @@
-#只有zerotier的小米路由器4A千兆版Openwrt构建
+# 只有zerotier的小米路由器4A千兆版Openwrt构建
 什么都没有，就是换用了Argonne主题，并且加入了TTYD、IPV6helper和zerotier
 如果有特殊需求 可以使用Shellclash。
