@@ -124,6 +124,7 @@ jobs:
         
     - name: 修复scpart.c已存在的错误
       run: |
+        cd openwrt
         wget https://github.com/coolsnowwolf/lede/pull/10206.patch | patch -p1
         
     - name: Compile the firmware
