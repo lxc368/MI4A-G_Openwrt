@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build OpenWrt with cachewrt
 
 on:
   repository_dispatch:
@@ -44,7 +44,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      fetch-depth: 0
 
     - name: Check server performance
       run: |
@@ -90,7 +89,10 @@ jobs:
       with:
         ccache: true
         prefix: ${{ github.workspace }}/openwrt
-
+        branch: ${{ github.event.inputs.branch }}
+        skipSave: ${{ env.BUILD_PURE || (github.event.inputs.commit != '') }}
+        skipFetch: ${{ github.event.inputs.cache == 'false' }}
+        
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
