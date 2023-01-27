@@ -36,8 +36,9 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04.1
+    runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: write
 
     steps:
