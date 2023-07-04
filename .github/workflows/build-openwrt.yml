@@ -83,16 +83,7 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
-#https://github.com/coolsnowwolf/lede/pull/7796
-    - name: cache
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: true
-        prefix: ${{ github.workspace }}/openwrt
-        branch: ${{ github.event.inputs.branch }}
-        skipSave: ${{ env.BUILD_PURE || (github.event.inputs.commit != '') }}
-        skipFetch: ${{ github.event.inputs.cache == 'false' }}
-        
+
     - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
