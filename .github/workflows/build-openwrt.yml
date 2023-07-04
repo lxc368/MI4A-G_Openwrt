@@ -85,7 +85,7 @@ jobs:
         
 #https://github.com/coolsnowwolf/lede/pull/7796
     - name: cache
-      uses: w311angg/cachewrtbuild@main
+      uses: klever1988/cachewrtbuild@main
       with:
         ccache: true
         prefix: ${{ github.workspace }}/openwrt
