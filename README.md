@@ -1,7 +1,7 @@
 # 刷机前记得通过telnet备份EEPROM和全部分区文件
 
 
-# 小米路由器4A千兆版Openwrt云编译构建 另有[Padavan-4.4](https://github.com/lxc368/XIAOMI_MI-R4A_Padavan_Kernel_4.4)云编译构建，支持闭源无线驱动和HWNAT，欢迎使用
+# 小米路由器4A千兆版Openwrt云编译构建
 
 默认SSID：MIWIFI  默认密码：password  无管理员密码，可以直接点击登录进入路由器后台。
 
