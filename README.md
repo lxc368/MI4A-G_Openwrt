@@ -1,9 +1,9 @@
 # 刷机前记得通过telnet备份EEPROM和全部分区文件
 
 
-# 小米路由器4A千兆版Openwrt云编译构建
+# 小米路由器4A千兆版Openwrt Action自动编译构建
 
-内置插件:DDNS，Wireguard，WOL网络唤醒，UPnP
+内置插件:easymash
 
 默认SSID：MIWIFI  默认密码：password  无管理员密码，可以直接点击登录进入路由器后台。
 
