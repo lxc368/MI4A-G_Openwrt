@@ -22,10 +22,6 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='R4A-G'' package
 # 版本号里显示一个自己的名字（ababwnq build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
 sed -i 's/OpenWrt /编译时间 $(TZ=UTC-8 date "+%Y.%m.%d") @ lxc368 /g' package/lean/default-settings/files/zzz-default-settings
 
-#更改主机型号，支持中文。 
-sed -i "s/Xiaomi Mi Router 4A Gigabit Edition/小米4A千兆版路由器/g" target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dts
-
-sed -i "s/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g" target/linux/ramips/Makefile
 
 # 状态系统增加个性信息
 sed -i "s/exit 0//" package/lean/default-settings/files/zzz-default-settings
