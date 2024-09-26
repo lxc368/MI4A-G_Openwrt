@@ -3,7 +3,9 @@
 
 # 小米路由器4A千兆版Openwrt Action自动编译构建
 
-内置插件:easymash
+5.4内核，支持HWNAT(LEDE)
+
+内置插件:无内置插件
 
 默认SSID：MIWIFI  默认密码：password  无管理员密码，可以直接点击登录进入路由器后台。
 
