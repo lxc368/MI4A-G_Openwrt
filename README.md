@@ -1,13 +1,10 @@
-# 刷机前记得通过telnet备份EEPROM和全部分区文件
-
-
 # 小米路由器4A千兆版Openwrt Action自动编译构建
 
-5.4内核，支持HWNAT(LEDE)
+5.4内核，支持HWNAT(LEDE)，MT76开源无线驱动
 
-内置插件:无内置插件
+内置插件:EasyMesh，WOL，zram-swap
 
-默认SSID：MIWIFI  默认密码：password  无管理员密码，可以直接点击登录进入路由器后台。
+默认SSID：MIWIFIR4AG  默认密码：password  无管理员密码，可以直接点击登录进入路由器后台。
 
 如果有特殊需求，推荐使用[Shellclash](https://github.com/juewuy/ShellClash/blob/master/README_CN.md)。
 
