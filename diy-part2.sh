@@ -53,3 +53,7 @@ sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/w
 #使用sed 在第四行后添加新字
 #sed -e 120a\set wireless.default_radio${devidx}.key=password package/kernel/mac80211/files/lib/wifi/mac80211.sh
 sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a\set wireless.default_radio${devidx}.key=password' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
+## fix batman-adv
+curl -fSLo "feeds/routing/batman-adv/src/compat-hacks.h" \
+    "https://raw.githubusercontent.com/No06/routing/main/batman-adv/src/compat-hacks.h"
