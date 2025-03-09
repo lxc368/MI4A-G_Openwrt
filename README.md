@@ -6,7 +6,7 @@
 
 默认SSID：MIWIFIR4AG  默认密码：password  无管理员密码，可以直接点击登录进入路由器后台。
 
-后台地址：192.168.31.1
+后台地址：192.168.32.1
 
 如果有特殊需求，推荐使用[Shellclash](https://github.com/juewuy/ShellClash/blob/master/README_CN.md)。
 
