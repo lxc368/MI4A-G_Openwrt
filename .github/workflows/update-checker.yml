@@ -18,8 +18,8 @@ env:
 
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: 0 */18 * * *
+  schedule:
+    - cron: 30 18 * * 6
 
 jobs:
   check:
@@ -49,7 +49,7 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       uses: peter-evans/repository-dispatch@v2
       with:
-        token: ${{ github.token }}
+        token: ${{ secrets.UP_TOKEN }}
         event-type: Source Code Update
 
     - name: Delete workflow runs
